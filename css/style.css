@@ -11,8 +11,7 @@ html {
 }
 
 .text-title {
-  font-family: "Vujahday Script", cursive;
-  font-size: 1.6em;
+  font-size: 1em;
 }
 
 .navbar {
@@ -35,4 +34,13 @@ i {
 .hero img {
   height: 100vh;
   object-fit: cover;
+}
+
+.navbar.scrolled {
+  background-color: #000 !important;
+  transition: 200ms linear;
+}
+
+.row .col-md {
+  margin: 20px 0px;
 }
