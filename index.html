@@ -46,11 +46,17 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Item 1</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Item 2</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Item 3</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#quienes-somos">Quienes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#destacados">Destacados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactanos">Contactanos</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -58,7 +64,7 @@
 
     <!--Carrousel-->
     <div
-      id="carouselExampleFade"
+      id="inicio"
       class="carousel slide carousel-fade hero"
       data-bs-ride="carousel"
     >
@@ -76,7 +82,7 @@
       <button
         class="carousel-control-prev"
         type="button"
-        data-bs-target="#carouselExampleFade"
+        data-bs-target="#inicio"
         data-bs-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -85,7 +91,7 @@
       <button
         class="carousel-control-next"
         type="button"
-        data-bs-target="#carouselExampleFade"
+        data-bs-target="#inicio"
         data-bs-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -94,8 +100,8 @@
     </div>
 
     <!--About Us-->
-    <div class="container p-5 text-light">
-      <h1 class="text-center text-light">Quienes Somos</h1>
+    <div id="quienes-somos" class="container p-5 text-light">
+      <h1 class="text-center text-light">¿QUIENES SOMOS?</h1>
       <hr />
       <div class="row">
         <div class="col-md">
@@ -144,6 +150,10 @@
     </div>
 
     <!--Destacados-->
+    <div id="destacados" class="section p-5 text-light">
+      <hr class="text-light" />
+      <h1 class="text-center">DESTACADOS</h1>
+    </div>
     <!--Contacto-->
     <!--Footer-->
   </body>
