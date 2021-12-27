@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <!--JS-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-
     <script src="js/nav-scroll.js"></script>
 
     <!--Font Awesome-->
@@ -58,7 +57,7 @@
               <a class="nav-link" href="#destacados">Destacados</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contactanos">Contactanos</a>
+              <a class="nav-link" href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>
@@ -153,18 +152,16 @@
     </div>
 
     <!--Destacados-->
-    <div id="destacados" class="section p-5">
-      <hr class="text-light" />
-      <h1 class="text-center text-light">DESTACADOS</h1>
+    <div id="destacados" class="section p-5 text-light">
+      <hr />
+      <h1 class="text-center">DESTACADOS</h1>
 
       <div class="row row-cols-1 row-cols-md-4 g-4">
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-100 bg-primary">
             <img src="assets/img/card1.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h4 class="card-title" style="font-weight: 300">
-                Lorem ipsum dolor sit amet
-              </h4>
+              <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
               <div class="card-text">
                 <p>
                   consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -176,12 +173,10 @@
         </div>
 
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-100 bg-primary">
             <img src="assets/img/card2.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h4 class="card-title" style="font-weight: 300">
-                Lorem ipsum dolor sit amet
-              </h4>
+              <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
               <div class="card-text">
                 <p>
                   consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -193,12 +188,10 @@
         </div>
 
         <div class="col">
-          <div class="card h-100">
-            <img src="assets/img/card2.jpg" class="card-img-top" alt="..." />
+          <div class="card h-100 bg-primary">
+            <img src="assets/img/card3.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h4 class="card-title" style="font-weight: 300">
-                Lorem ipsum dolor sit amet
-              </h4>
+              <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
               <div class="card-text">
                 <p>
                   consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -210,12 +203,10 @@
         </div>
 
         <div class="col">
-          <div class="card h-100">
-            <img src="assets/img/card2.jpg" class="card-img-top" alt="..." />
+          <div class="card h-100 bg-primary">
+            <img src="assets/img/card4.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h4 class="card-title" style="font-weight: 300">
-                Lorem ipsum dolor sit amet
-              </h4>
+              <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
               <div class="card-text">
                 <p>
                   consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -227,15 +218,50 @@
         </div>
       </div>
     </div>
-    <!--Contacto-->
-    <!--Footer-->
 
-    <script>
-      window.addEventListener("scroll", function () {
-        let header = document.querySelector("header");
-        let windowPosition = window.scrollY > 0;
-        header.classList.toggle("scrolling-active", windowPosition);
-      });
-    </script>
+    <!--Contacto-->
+    <div id="contacto" class="section p-5">
+      <hr class="text-light" />
+      <h1 class="text-center text-light">CONTACTO</h1>
+      <form>
+        <div class="mb-3">
+          <label for="nombreInput" class="form-label text-light">Nombre</label>
+          <input
+            type="email"
+            class="form-control"
+            id="nombreInput"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="asuntoInput" class="form-label text-light">Asunto</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" />
+        </div>
+        <div class="mb-3">
+          <label for="mensajeInput" class="form-label text-light"
+            >Mensaje</label
+          >
+          <textarea class="form-control" id="mensajeInput" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+
+    <!--Footer-->
+    <footer class="bg-primary text-white">
+      <div class="section p-5">
+        <div class="float-start">
+          <h1>Viajes Chile</h1>
+        </div>
+        <br />
+        <div class="float-end">
+          <i class="fa-brands fa-github-square"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-twitter-square"></i>
+          <i class="fa-brands fa-facebook-square"></i>
+        </div>
+        <br />
+      </div>
+    </footer>
   </body>
 </html>

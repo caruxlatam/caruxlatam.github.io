@@ -44,3 +44,8 @@ i {
 .row .col-md {
   margin: 20px 0px;
 }
+
+#destacados img {
+  height: 250px;
+  object-fit: cover;
+}
